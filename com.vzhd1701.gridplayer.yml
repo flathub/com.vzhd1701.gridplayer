@@ -50,4 +50,4 @@ modules:
   sources:
   - type: git
     url: https://github.com/vzhd1701/gridplayer-flatpak.git
-    commit: f830d3a9ce748859cb95d4dfba6dcdbb27f3f9cc
+    commit: 3952401dbd1206247f93d06bb55449d0b7486a02
