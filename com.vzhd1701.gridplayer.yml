@@ -1,6 +1,6 @@
 app-id: "com.vzhd1701.gridplayer"
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: "5.15-21.08"
 sdk: org.kde.Sdk
 command: "gridplayer"
 finish-args:
@@ -11,7 +11,8 @@ finish-args:
 - "--socket=x11"
 # Sound
 - "--socket=pulseaudio"
-# Files & network shares
+# Files & network
+- "--share=network"
 - "--filesystem=host"
 - "--filesystem=xdg-run/gvfs"
 # Screen inhibit
@@ -50,4 +51,4 @@ modules:
   sources:
   - type: git
     url: https://github.com/vzhd1701/gridplayer-flatpak.git
-    commit: 5f2b7a17e121881ca7f3c19cbdafc81593560fd8
+    commit: dd1099651488383064ec1540009cc5243101a9cb
