@@ -3,6 +3,10 @@ cleanup:
 - "/include"
 - "/lib/python3.9/site-packages/*.pyi"
 - "/lib/python3.9/site-packages/PyQt5/uic"
+build-options:
+  arch:
+    aarch64:
+      env: [EXTRA_PYQT_CONFIG_OPTS="--disabled-feature=PyQt_Desktop_OpenGL"]
 config-opts:
 - "--disable-static"
 - "--enable-x11"
@@ -22,6 +26,7 @@ build-commands:
   --enable=QtWidgets
   --enable=QtDBus
   --enable=QtX11Extras
+  "$EXTRA_PYQT_CONFIG_OPTS"
 - make -j $(nproc)
 - make install
 sources:
