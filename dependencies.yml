@@ -1,3 +1,4 @@
+# Generated with flatpak-pip-generator --requirements-file=/home/runner/work/gridplayer/gridplayer/build/flatpak_python_deps/requirements.txt --yaml --output dependencies
 build-commands: []
 buildsystem: simple
 modules:
