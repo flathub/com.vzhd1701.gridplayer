@@ -209,14 +209,14 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "yt-dlp==2022.6.29" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "yt-dlp==2022.7.18" --no-build-isolation
     sources:
       - *id013
-      - type: file
-        url: https://files.pythonhosted.org/packages/aa/a0/1fa912cd0f611af8ba9524faa5b79b18ee9a74d65ff8c94609ea2530b07e/yt_dlp-2022.6.29-py2.py3-none-any.whl
-        sha256: a688f5cbc4a824456983774ccdd4a12befd379f6c92e25074fa85e7b8ce31704
       - *id014
       - *id001
+      - type: file
+        url: https://files.pythonhosted.org/packages/1f/13/b1f7b4e44b11584a5f077af87895961b57911217a629efb8d3a9efd2a491/yt_dlp-2022.7.18-py2.py3-none-any.whl
+        sha256: d7d1f81d230756f094b4d9ee59b37b2c13b2e63ff5fb72cda53625edb072cdae
       - *id015
       - *id016
 name: dependencies
