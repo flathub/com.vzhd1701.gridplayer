@@ -2,6 +2,15 @@
 build-commands: []
 buildsystem: simple
 modules:
+  - name: setuptools
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "setuptools==67.7.2" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/2f/8c/f336a966d4097c7cef6fc699b2ecb83b5fb63fd698198c1b5c7905a74f0f/setuptools-67.7.2-py3-none-any.whl
+        sha256: 23aaf86b85ca52ceb801d32703f12d77517b2556af839621c641fca11287952b
   - name: python3-brotli
     buildsystem: simple
     build-commands:
@@ -203,8 +212,8 @@ modules:
     sources:
       - &id016
         type: file
-        url: https://files.pythonhosted.org/packages/47/96/9d5749106ff57629b54360664ae7eb9afd8302fad1680ead385383e33746/websockets-11.0.3-py3-none-any.whl
-        sha256: 6681ba9e7f8f3b19440921e99efbb40fc89f26cd71bf539e45d8c8a25c976dc6
+        url: https://files.pythonhosted.org/packages/d8/3b/2ed38e52eed4cf277f9df5f0463a99199a04d9e29c9e227cfafa57bd3993/websockets-11.0.3.tar.gz
+        sha256: 88fc51d9a26b10fc331be344f1781224a375b78488fc343620184e95a4b27016
   - name: python3-yt-dlp
     buildsystem: simple
     build-commands:
