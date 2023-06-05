@@ -203,8 +203,8 @@ modules:
     sources:
       - &id016
         type: file
-        url: https://files.pythonhosted.org/packages/d8/3b/2ed38e52eed4cf277f9df5f0463a99199a04d9e29c9e227cfafa57bd3993/websockets-11.0.3.tar.gz
-        sha256: 88fc51d9a26b10fc331be344f1781224a375b78488fc343620184e95a4b27016
+        url: https://files.pythonhosted.org/packages/47/96/9d5749106ff57629b54360664ae7eb9afd8302fad1680ead385383e33746/websockets-11.0.3-py3-none-any.whl
+        sha256: 6681ba9e7f8f3b19440921e99efbb40fc89f26cd71bf539e45d8c8a25c976dc6
   - name: python3-yt-dlp
     buildsystem: simple
     build-commands:
