@@ -1,6 +1,6 @@
 app-id: "com.vzhd1701.gridplayer"
 runtime: org.kde.Platform
-runtime-version: "5.15-21.08"
+runtime-version: "5.15-22.08"
 sdk: org.kde.Sdk
 command: "gridplayer"
 finish-args:
@@ -59,4 +59,4 @@ modules:
   sources:
   - type: git
     url: https://github.com/vzhd1701/gridplayer-flatpak.git
-    commit: 529890636c48053a6a89d0aa49a1d9e1faff4bfa
+    commit: 53294c135582e51adfe858604ef44bf3bf13ad00
