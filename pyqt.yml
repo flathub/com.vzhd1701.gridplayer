@@ -69,6 +69,18 @@ modules:
     --prefix=${FLATPAK_DEST} "sip" --no-build-isolation
   sources:
   - type: file
+    url: https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
+    sha256: 8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7
+  - type: file
+    url: https://files.pythonhosted.org/packages/6b/31/89d6cd9d6ddc7fe160d6834d498c69fc92b9e70771e280a59cc8a085d5a2/PyQt_builder-1.15.3-py3-none-any.whl
+    sha256: 8fa8302510f22df4264d8c8c6869629ebae2b7e4815439ab1a0326a23845bb43
+  - type: file
+    url: https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
+    sha256: 096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce
+  - type: file
+    url: https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+    sha256: 939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc
+  - type: file
     url: https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
     sha256: 08e66f742592eb818ac8fda4173e2ed64c9f2d40b70bee11db1c499127d98450
 - name: PyQt5_sip
