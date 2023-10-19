@@ -68,7 +68,7 @@ modules:
   - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
     --prefix=${FLATPAK_DEST} "sip" --no-build-isolation
   sources:
-  - type: archive
+  - type: file
     url: https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
     sha256: 08e66f742592eb818ac8fda4173e2ed64c9f2d40b70bee11db1c499127d98450
 - name: PyQt5_sip
@@ -77,6 +77,6 @@ modules:
   - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
     --prefix=${FLATPAK_DEST} "PyQt5-sip" --no-build-isolation
   sources:
-  - type: archive
+  - type: file
     url: https://files.pythonhosted.org/packages/ee/81/fce2a475aa56c1f49707d9306b930695b6ff078c2242c9f2fd72a3214e1f/PyQt5_sip-12.13.0.tar.gz
     sha256: 7f321daf84b9c9dbca61b80e1ef37bdaffc0e93312edae2cd7da25b953971d91
