@@ -15,7 +15,6 @@ build-commands:
   --jobs ${FLATPAK_BUILDER_N_JOBS}
   --confirm-license
   --no-docstrings
-  --no-docstrings
   --no-qml-plugin
   --no-designer-plugin
   --no-tools
