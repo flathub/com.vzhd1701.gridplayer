@@ -15,21 +15,15 @@ build-commands:
   --jobs ${FLATPAK_BUILDER_N_JOBS}
   --confirm-license
   --no-docstrings
-  --assume-shared
-  --no-sip-files
   --no-docstrings
   --no-qml-plugin
   --no-designer-plugin
   --no-tools
-  --no-qsci-api
   --disable=QtSensors
-  --disable=QtWebEngine
   --disable=QtQuick
   --disable=QtQml
   --disable=QtTest
   --disable=QtWebChannel
-  --disable=QtWebEngineCore
-  --disable=QWebEngineWidgets
   --disable=QtQuickWidgets
   --disable=QtSql
   --disable=QtXmlPatterns
@@ -59,6 +53,11 @@ sources:
   url: https://files.pythonhosted.org/packages/4d/5d/b8b6e26956ec113ad3f566e02abd12ac3a56b103fcc7e0735e27ee4a1df3/PyQt5-5.15.10.tar.gz
   sha256: d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a
 modules:
+- name: python3-flit_core
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "flit_core" --no-build-isolation
 - name: PyQt_builder
   cleanup:
   - "*"
