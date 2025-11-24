@@ -25,12 +25,10 @@ finish-args:
 - "--env=SESSION_MANAGER="
 
 cleanup:
-- "/bin/pylupdate5"
-- "/bin/pyrcc5"
-- "/bin/pyuic5"
 - "/include"
 - "/lib/*.a"
 - "/lib/*.la"
+- "/lib/debug"
 - "/lib/pkgconfig"
 - "/share/man"
 
@@ -39,6 +37,8 @@ modules:
 - pyqt.yml
 - dependencies.yml
 - name: poetry-core
+  cleanup:
+  - "*"
   buildsystem: simple
   build-commands:
     - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
@@ -59,4 +59,4 @@ modules:
   sources:
   - type: git
     url: https://github.com/vzhd1701/gridplayer-flatpak.git
-    commit: 53294c135582e51adfe858604ef44bf3bf13ad00
+    commit: 4e67d080e47bf8c9096d9c989984e9b20abe1dde

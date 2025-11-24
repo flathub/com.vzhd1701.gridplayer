@@ -1,8 +1,10 @@
 name: PyQt5
 cleanup:
+- "/bin"
 - "/include"
 - "/lib/python3.10/site-packages/*.pyi"
 - "/lib/python3.10/site-packages/PyQt5/uic"
+- "/lib/python3.10/site-packages/PyQt5/bindings"
 config-opts:
 - "--disable-static"
 - "--enable-x11"
@@ -14,45 +16,26 @@ build-commands:
   --build-dir ./build
   --jobs ${FLATPAK_BUILDER_N_JOBS}
   --confirm-license
+  --verbose
   --no-docstrings
   --no-qml-plugin
   --no-designer-plugin
   --no-tools
-  --disable=QtSensors
-  --disable=QtQuick
-  --disable=QtQml
-  --disable=QtTest
-  --disable=QtWebChannel
-  --disable=QtQuickWidgets
-  --disable=QtSql
-  --disable=QtXmlPatterns
-  --disable=QtMultimedia
-  --disable=QtMultimediaWidgets
-  --disable=QtLocation
-  --disable=QtDesigner
-  --disable=QtOpenGL
-  --disable=QtBluetooth
-  --disable=QtWebKit
-  --disable=QtWebKitWidgets
-  --disable=QtNfc
-  --disable=QtPositioning
-  --disable=QtHelp
-  --disable=QtNetwork
-  --disable=QtPrintSupport
-  --disable=QtXml
-  --disable=QtSerialPort
-  --disable=QtWebSockets
-  --disable=QtRemoteObjects
-  --disable=QtTextToSpeech
-  --disable=_QOpenGLFunctions_2_0
-  --disable=_QOpenGLFunctions_2_1
-  --disable=_QOpenGLFunctions_4_1_Core
+  --enable=Qt
+  --enable=QtCore
+  --enable=QtDBus
+  --enable=QtGui
+  --enable=QtWidgets
+  --enable=QtX11Extras
+  --enable=QtSvg
 sources:
 - type: archive
   url: https://files.pythonhosted.org/packages/4d/5d/b8b6e26956ec113ad3f566e02abd12ac3a56b103fcc7e0735e27ee4a1df3/PyQt5-5.15.10.tar.gz
   sha256: d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a
 modules:
 - name: python3-flit_core
+  cleanup:
+  - "*"
   buildsystem: simple
   build-commands:
   - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
