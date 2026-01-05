@@ -41,8 +41,8 @@ modules:
     --prefix=${FLATPAK_DEST} "flit_core" --no-build-isolation
   sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/69/59/b6fc2188dfc7ea4f936cd12b49d707f66a1cb7a1d2c16172963534db741b/flit_core-3.12.0.tar.gz
-    sha256: 18f63100d6f94385c6ed57a72073443e1a71a4acb4339491615d0f16d6ff01b2
+    url: https://files.pythonhosted.org/packages/d5/ae/09427bea9227a33ec834ed5461432752fd5d02b14f93dd68406c91684622/flit_core-3.10.1.tar.gz
+    sha256: 66e5b87874a0d6e39691f0e22f09306736b633548670ad3c09ec9db03c5662f7
 - name: PyQt_builder
   cleanup:
   - "*"
@@ -52,11 +52,11 @@ modules:
     --prefix=${FLATPAK_DEST} "PyQt-builder" --no-build-isolation
   sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz
-    sha256: d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f
+    url: https://files.pythonhosted.org/packages/51/65/50db4dda066951078f0a96cf12f4b9ada6e4b811516bf0262c0f4f7064d4/packaging-24.1.tar.gz
+    sha256: 026ed72c8ed3fcce5bf8950572258698927fd1dbda10a5e981cdf0ac37f4f002
   - type: file
-    url: https://files.pythonhosted.org/packages/13/e8/3cdb96cd8f7f0bf4113532d5d762324dd6ea3630362ea2169f9075803a2e/pyqt_builder-1.19.1-py3-none-any.whl
-    sha256: bb8a348479c25db54aa37542fcc98b6c28bb057c9dbac07ddf2424df2084951a
+    url: https://files.pythonhosted.org/packages/c0/75/a3384eea8770c17e77821368618a5140c4ae0c37f9c05a84ef55f4807172/PyQt-builder-1.15.4.tar.gz
+    sha256: 39f8c75db17d9ce17cb6bbf3df1650b5cebc1ea4e5bd73843d21cc96612b2ae1
   - type: file
     url: https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz
     sha256: 00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3
@@ -64,8 +64,8 @@ modules:
     url: https://files.pythonhosted.org/packages/35/b9/de2a5c0144d7d75a57ff355c0c24054f965b2dc3036456ae03a51ea6264b/tomli-2.0.2.tar.gz
     sha256: d46d457a85337051c36524bc5349dd91b1877838e2979ac5ced3e710ed8a60ed
   - type: file
-    url: https://files.pythonhosted.org/packages/1c/7d/136d2f521fa6d9b9921e41d141be605ad57f32a055ff7141ebd63b830bfc/sip-6.15.1-py3-none-any.whl
-    sha256: 596cd4b306cf11de469f3f638b24c592763b2d8accb127170b0db95c530b0700
+    url: https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
+    sha256: 08e66f742592eb818ac8fda4173e2ed64c9f2d40b70bee11db1c499127d98450
 - name: PyQt5_sip
   buildsystem: simple
   build-commands:
@@ -73,5 +73,5 @@ modules:
     --prefix=${FLATPAK_DEST} "PyQt5-sip" --no-build-isolation
   sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/1e/4a/195cf4d2a7e1ff480b4cabcd51aa5c0068c03a19a97282317536e4a82e1e/pyqt5_sip-12.17.2.tar.gz
-    sha256: 7f66565c2a13d34d8ad6aad08e953d355ea3fe466d991d51aa5a0966a5289f05
+    url: https://files.pythonhosted.org/packages/ee/81/fce2a475aa56c1f49707d9306b930695b6ff078c2242c9f2fd72a3214e1f/PyQt5_sip-12.13.0.tar.gz
+    sha256: 7f321daf84b9c9dbca61b80e1ef37bdaffc0e93312edae2cd7da25b953971d91
