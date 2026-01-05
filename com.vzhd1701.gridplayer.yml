@@ -28,7 +28,6 @@ cleanup:
 - "/include"
 - "/lib/*.a"
 - "/lib/*.la"
-- "/lib/debug"
 - "/lib/pkgconfig"
 - "/share/man"
 
