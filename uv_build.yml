@@ -1,0 +1,19 @@
+# Generated with flatpak-pip-generator --yaml --build-only --output uv_build --prefer-wheels uv_build --runtime org.kde.Sdk//5.15-25.08 uv_build
+name: python3-uv_build
+buildsystem: simple
+build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "uv_build" --no-build-isolation
+sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/83/47/5966e2dbf983a5fc9d238bc84a854c4a2c5ea2a02fbd5e645b14fb977deb/uv_build-0.11.32-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: a9c64f4139a05fa45a38f2a646e130b9b79fdd1110de5c54218b378100ae4d9d
+    only-arches:
+      - x86_64
+  - type: file
+    url: https://files.pythonhosted.org/packages/b0/ac/7c9c765cd3cc67855e7283efc18cb4d1d444b832850955308d8e2f7a238e/uv_build-0.11.32-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl
+    sha256: 2386ee0b107ffc13fe14bd4b278aba22c091a0f0bc2f6adb03aacfc320dd1322
+    only-arches:
+      - aarch64
+cleanup:
+  - '*'
