@@ -22,8 +22,6 @@ finish-args:
 - "--filesystem=xdg-run/gvfs"
 # Screen inhibit
 - "--talk-name=org.freedesktop.ScreenSaver"
-# Media keys in the background
-- "--own-name=org.mpris.MediaPlayer2.gridplayer.*"
 # Tray icon, and its note that the player is still running
 - "--talk-name=org.kde.StatusNotifierWatcher"
 # Disable annoying warnings
@@ -62,4 +60,4 @@ modules:
   sources:
   - type: git
     url: https://github.com/vzhd1701/gridplayer-flatpak.git
-    commit: 990aa07723587a86663ae8e7029420601ae600ca
+    commit: 55b133280dc44f682d9f776ce9eafe540caaa9a5
