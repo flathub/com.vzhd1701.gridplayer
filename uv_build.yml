@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --yaml --build-only --output uv_build --prefer-wheels uv_build --runtime org.kde.Sdk//5.15-25.08 uv_build
+# Generated with flatpak-pip-generator --yaml --build-only --output uv_build --prefer-wheels uv_build --runtime org.kde.Sdk//6.11 uv_build
 name: python3-uv_build
 buildsystem: simple
 build-commands:
@@ -6,13 +6,13 @@ build-commands:
     --prefix=${FLATPAK_DEST} "uv_build" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/83/47/5966e2dbf983a5fc9d238bc84a854c4a2c5ea2a02fbd5e645b14fb977deb/uv_build-0.11.32-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-    sha256: a9c64f4139a05fa45a38f2a646e130b9b79fdd1110de5c54218b378100ae4d9d
+    url: https://files.pythonhosted.org/packages/66/8c/11a5de9b9be1eca3b99004bfb89a5584816ffa596d399bf6fa0dc3ac6cd5/uv_build-0.13.10-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: cb1d63c6b2320ff01f25132f2d8f853c477a16253fee376518ef930873d94986
     only-arches:
       - x86_64
   - type: file
-    url: https://files.pythonhosted.org/packages/b0/ac/7c9c765cd3cc67855e7283efc18cb4d1d444b832850955308d8e2f7a238e/uv_build-0.11.32-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl
-    sha256: 2386ee0b107ffc13fe14bd4b278aba22c091a0f0bc2f6adb03aacfc320dd1322
+    url: https://files.pythonhosted.org/packages/32/3c/6f99d817d4a8e43311ce4d27df25dccb796ae00e0c4271ad45f938e3823a/uv_build-0.13.10-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl
+    sha256: fefa258ea56f462226161a03a3e83dd818c76b497d9e65a65978a128865f25c5
     only-arches:
       - aarch64
 cleanup:
